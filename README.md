@@ -32,7 +32,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [x] Cypress
 - [x] Javascript
 - [x] Docker
-- [x] Facker
+- [x] Faker
 - [x] Mochajs
 - [x] ChaiJs
 - [x] Github Actions | CICD
