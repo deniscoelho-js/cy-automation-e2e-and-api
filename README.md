@@ -42,7 +42,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 Clone o repositório
 
 ```bash
-git clone https://github.com/deniscoelho-js/cypress-rest-api-sbr.git
+git clone https://github.com/deniscoelho-js/cy-automation-e2e-and-api.git
 
 ```
 
