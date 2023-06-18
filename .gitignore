@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-/lessons
+cypress.env.json
 /img
 cypress/downloads/
 cypress/screenshots/
