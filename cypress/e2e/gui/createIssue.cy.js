@@ -10,13 +10,12 @@ describe('Create Issue', () => {
     },
   }
 
-  //pre condicao que o usuario esteja logado e que o projeto já exista
   beforeEach(() => {
     cy.login()
     cy.gui_createProject(issue.project)
   })
 
-  it('Sucessfully', () => {
+  it('successfully', () => {
     cy.gui_createIssue(issue)
 
     cy.get('.issue-details')
