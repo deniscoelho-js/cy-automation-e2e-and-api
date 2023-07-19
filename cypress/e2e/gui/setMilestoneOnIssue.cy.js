@@ -5,15 +5,15 @@ const options = { env: { snapshotOnly: true } }
 describe('Set milestone on issue', options, () => {
   const issue = {
     title: `issue-${faker.datatype.uuid()}`,
-    description: faker.ramdom.words(3),
+    description: faker.random.words(3),
     project: {
       name: `project-${faker.datatype.uuid()}`,
-      description: `faker.ramdom.words(5)`,
+      description: faker.random.words(5),
     },
   }
 
   const milestone = {
-    title: `milestone-${faker.ramdom.word()}`,
+    title: `milestone-${faker.random.word()}`,
   }
 
   beforeEach(() => {

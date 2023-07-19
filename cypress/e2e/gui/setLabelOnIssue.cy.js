@@ -5,15 +5,15 @@ const options = { env: { snapshotOnly: true } }
 describe('Set label on issue', options, () => {
   const issue = {
     title: `issue-${faker.datatype.uuid()}`,
-    description: `${faker.datatype.words(3)}`,
+    description: faker.random.words(3),
     project: {
       name: `${faker.datatype.uuid()}`,
-      description: `${faker.datatype.words(5)}`,
+      description: faker.random.words(5),
     },
   }
 
   const label = {
-    name: `label-${faker.ramdom.word()}`,
+    name: `label-${faker.random.word()}`,
     color: '#ffaabb',
   }
 
@@ -32,6 +32,7 @@ describe('Set label on issue', options, () => {
 
   it('successfully', () => {
     cy.gui_setLabelOnIssue(label)
+
     cy.get('.qa-labels-block').should('contain', label.name)
     cy.get('.qa-labels-block span').should(
       'have.attr',
